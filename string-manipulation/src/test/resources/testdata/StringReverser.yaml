@@ -1,0 +1,20 @@
+tests:
+  - name: normal word
+    input: "hello"
+    expected: "olleh"
+
+  - name: palindrome
+    input: "madam"
+    expected: "madam"
+
+  - name: empty string
+    input: ""
+    expected: ""
+
+  - name: with spaces
+    input: "hello world"
+    expected: "dlrow olleh"
+
+  - name: null input
+    input: ~    # YAML null value
+    expected: ""

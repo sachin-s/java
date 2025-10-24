@@ -12,7 +12,7 @@ documentation
   7. testing
   8. network operations
   9. stream operations
-  10. device operations
-  11. OAuth server
+  10. OAuth server
+  11. device operations
   12. streaming server
   13. distributed systems

@@ -11,5 +11,6 @@
 
     <modules>
         <module>string-manipulation</module>
+        <module>common-utils</module>
     </modules>
 </project>

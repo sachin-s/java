@@ -3,6 +3,8 @@ package org.sachin.CommonUtils;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 /*
 LogResultTable class will have the following functions
 1. pushLogResult() to store the unit test case results
@@ -13,10 +15,12 @@ LogResultTable class will have the following functions
 
 public class LogResultTable {
 
-    final private String header = "\n================================================================================================================================================================";
-    final private String footer = "================================================================================================================================================================\n";
+    private static final Logger log = LoggerFactory.getLogger(LogResultTable.class);
 
-    final private String separotor = "----------------------------------------------------------------------------------------------------------------------------------------------------------------";
+    final private String header = "====================================================================================================";
+    final private String footer = "====================================================================================================\n";
+
+    final private String separotor = "----------------------------------------------------------------------------------------------------";
     final private String pass = "✅";
     final private String fail = "❌";
 
@@ -31,16 +35,16 @@ public class LogResultTable {
 
     public void print() {
 
-        System.out.println(header);
-
-        System.out.println(String.format("%-30s | %-30s | %-30s | %-30s | %-30s","Name","Input","Expected","Actual","Result"));
-        System.out.println(separotor);
+        log.info("\n");
+        log.info(header);
+        log.info(String.format("%-20s | %-20s | %-20s | %-20s | %-20s","Name","Input","Expected","Actual","Result"));
+        log.info(separotor);
         for (TestResult item : tr) {
 
-            System.out.println(String.format("%-30s | %-30s | %-30s | %-30s | %-30s",item.getName(),item.getInput(),item.getExpected(),item.getActual(),item.getResult()?pass:fail));
+            log.info(String.format("%-20s | %-20s | %-20s | %-20s | %-20s",item.getName(),item.getInput(),item.getExpected(),item.getActual(),item.getResult()?pass:fail));
         }
 
-        System.out.println(footer);
+        log.info(footer);
     }
 
     public void clearPrint() {

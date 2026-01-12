@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-21T13:02:45 IST" name="Default Suite" finished-at="2025-11-21T13:02:45 IST" duration-ms="108">
+    <groups>
+    </groups>
+    <test started-at="2025-11-21T13:02:45 IST" name="string-manipulation" finished-at="2025-11-21T13:02:45 IST" duration-ms="108">
+      <class name="org.sachin.stringManipulation.lib.StringReverserTest">
+        <test-method signature="testStringReverser(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.sachin.stringManipulation.lib.StringReverserTest@434a63ab]" started-at="2025-11-21T13:02:45 IST" name="testStringReverser" data-provider="reverserData" finished-at="2025-11-21T13:02:45 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[normal word]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[olleh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStringReverser -->
+        <test-method signature="testStringReverser(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.sachin.stringManipulation.lib.StringReverserTest@434a63ab]" started-at="2025-11-21T13:02:45 IST" name="testStringReverser" data-provider="reverserData" finished-at="2025-11-21T13:02:45 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[palindrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[madam]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[madam]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStringReverser -->
+        <test-method signature="testStringReverser(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.sachin.stringManipulation.lib.StringReverserTest@434a63ab]" started-at="2025-11-21T13:02:45 IST" name="testStringReverser" data-provider="reverserData" finished-at="2025-11-21T13:02:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[empty string]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStringReverser -->
+        <test-method signature="testStringReverser(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.sachin.stringManipulation.lib.StringReverserTest@434a63ab]" started-at="2025-11-21T13:02:45 IST" name="testStringReverser" data-provider="reverserData" finished-at="2025-11-21T13:02:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[with spaces]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hello world]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dlrow olleh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStringReverser -->
+        <test-method signature="testStringReverser(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.sachin.stringManipulation.lib.StringReverserTest@434a63ab]" started-at="2025-11-21T13:02:45 IST" name="testStringReverser" data-provider="reverserData" finished-at="2025-11-21T13:02:45 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[null input]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStringReverser -->
+        <test-method is-config="true" signature="afterAllMethods()[pri:0, instance:org.sachin.stringManipulation.lib.StringReverserTest@434a63ab]" started-at="2025-11-21T13:02:45 IST" name="afterAllMethods" finished-at="2025-11-21T13:02:45 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAllMethods -->
+      </class> <!-- org.sachin.stringManipulation.lib.StringReverserTest -->
+    </test> <!-- string-manipulation -->
+  </suite> <!-- Default Suite -->
+</testng-results>
